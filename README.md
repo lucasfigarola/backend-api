@@ -66,6 +66,16 @@ http://localhost:3001
 ### Etiquetas
 - `GET /tags`: lista todas las etiquetas
 
+### Imágenes
+- `GET /postimages/post/:postId`: devuelve todas las imágenes asociadas a un post
+- `POST /postimages`: crea una nueva imagen para un post  
+  **Body JSON requerido:**
+  ```json
+  {
+    "url": "https://via.placeholder.com/300x200.png?text=Ejemplo",
+    "postId": 1
+  }
+
 ---
 
 ## ℹ️ Notas
