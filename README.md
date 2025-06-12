@@ -52,7 +52,6 @@ http://localhost:3001
 ### Usuarios
 - `GET /users`: devuelve todos los usuarios
 - `GET /users/:id`: devuelve un usuario por ID
-- `GET /users?nickName=luna`: busca por nickName
 - `POST /users`: crea un nuevo usuario (con `nickName` y `email`)
 
 ### Publicaciones
