@@ -53,15 +53,36 @@ http://localhost:3001
 - `GET /users`: devuelve todos los usuarios
 - `GET /users/:id`: devuelve un usuario por ID
 - `POST /users`: crea un nuevo usuario (con `nickName` y `email`)
+  **Body JSON requerido:**
+  ```json
+  {
+    "nickName": "luna",
+    "email": "luna@example.com"
+  }
 
 ### Publicaciones
 - `GET /posts`: lista todas las publicaciones
 - `GET /posts/:id`: detalle de una publicación
 - `POST /posts`: crear nueva publicación
+  **Body JSON requerido:**
+  ```json
+  {
+    "description": "Hoy reflexioné sobre el diseño UX",
+    "userId": 1,
+    "tagIds": [1, 2]
+  }
+  > Nota: el campo tagIds es opcional. Si no se incluye, la publicación se crea sin etiquetas. 
 
 ### Comentarios
 - `GET /comments/post/:postId`: comentarios visibles recientes para un post
 - `POST /comments`: crear comentario
+  **Body JSON requerido:**
+  ```json
+  {
+    "content": "Muy buena reflexión sobre diseño!",
+    "userId": 2,
+    "postId": 1
+  }
 
 ### Etiquetas
 - `GET /tags`: lista todas las etiquetas
