@@ -71,7 +71,8 @@ http://localhost:3001
     "userId": 1,
     "tagIds": [1, 2]
   }
-  > Nota: el campo tagIds es opcional. Si no se incluye, la publicación se crea sin etiquetas. 
+  
+> Nota: el campo tagIds es opcional. Si no se incluye, la publicación se crea sin etiquetas. 
 
 ### Comentarios
 - `GET /comments/post/:postId`: comentarios visibles recientes para un post
